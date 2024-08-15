@@ -1,0 +1,87 @@
+---
+title: Indivisible Skagit
+timezone: America/Los_Angeles
+collections:
+  posts:
+    title: Posts
+    output: true
+  representatives:
+    title: Representatives
+    output: false
+  successes:
+    title: Successes
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    is featured: false
+    main-image: 
+    call-script-text: 
+    event-start-date: 
+    event-end-date: 
+    Location: 
+    RSVP-link: 
+    layout: post
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: representatives
+  values:
+    phone-numbers:
+      office-name: "(000) 000-0000"
+    website: 
+- scope:
+    path: ''
+    type: successes
+  values:
+    is featured: false
+    main-image: 
+    layout: media-item
+- scope:
+    path: ''
+    type: calendar
+  values:
+    embed-code: 
+- scope:
+    path: ''
+    type: becomeAMember
+  values:
+    main-image: 
+    mailchimp-form-embed: 
+subtitle: Indivisible Organized Locally for Skagit County
+email: info@indivisibleskagit.org
+baseurl: 
+url: indivisibleskagit.org
+twitter_username: 
+facebook_username: 
+background-image: "/uploads/image001.jpg"
+member-count: 787
+footer-title: Spread the word. Help build a movement.
+markdown: kramdown
+gems:
+- jekyll-feed
+- jekyll-paginate
+paginate: 10
+paginate_path: "/blog/page:num/"
+exclude:
+- Gemfile
+- Gemfile.lock
+google_analytics: |-
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117150935-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117150935-1');
+  </script>
